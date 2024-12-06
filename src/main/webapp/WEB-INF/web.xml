@@ -1,0 +1,27 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" 
+         version="3.1">
+
+    <!-- Registrar o AparelhoController -->
+    <servlet>
+        <servlet-name>AparelhoController</servlet-name>
+        <servlet-class>controller.AparelhoController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AparelhoController</servlet-name>
+        <url-pattern>/aparelho</url-pattern> <!-- URL que chama o AparelhoController -->
+    </servlet-mapping>
+
+    <!-- Registrar o OrdemServicoController -->
+    <servlet>
+        <servlet-name>OrdemServicoController</servlet-name>
+        <servlet-class>controller.OrdemServicoController</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>OrdemServicoController</servlet-name>
+        <url-pattern>/ordemServico</url-pattern> <!-- URL que chama o OrdemServicoController -->
+    </servlet-mapping>
+    
+</web-app>
